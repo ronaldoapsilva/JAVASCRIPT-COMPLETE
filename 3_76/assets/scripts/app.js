@@ -31,6 +31,14 @@ function writeToLog(
 
 function calculateResult(caculationType) {
   const enteredNumber = getUserNumberInput();
+  if (
+    caculationType !== 'ADD' &&
+    caculationType !== 'SUBTRACT' &&
+    caculationType !== 'MULTIPLE' &&
+    caculationType !== 'DIVIDE' ||
+    !enteredNumber) {
+      return;
+    }
   const initialResult = currentResult;
   let mathOperator;
   if (caculationType === 'ADD') {
@@ -46,7 +54,6 @@ function calculateResult(caculationType) {
     currentResult /= enteredNumber;
     mathOperator = '/';
   }
-
   createAndWriteOutPut(mathOperator, initialResult, enteredNumber);
   writeToLog(caculationType, initialResult, enteredNumber, currentResult)
 }
