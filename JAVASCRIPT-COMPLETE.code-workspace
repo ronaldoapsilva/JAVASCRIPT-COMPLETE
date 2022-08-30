@@ -11,8 +11,10 @@
 		"editor.rulers": [
 		  79
 		],
+		"editor.wordWrap": "off",
+		"prettier.printWidth": 79,
 		"files.trimTrailingWhitespace": true,
-		"explorer.incrementalNaming": "smart",		
+		"explorer.incrementalNaming": "smart",
 		"workbench.colorTheme": "Default Light+",
 	}
 }
