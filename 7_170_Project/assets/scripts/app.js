@@ -44,6 +44,7 @@ const deleteMovieHandler = (movieId) => {
   listRoot.children[movieIndex].remove();
   // listRoot.removeChild(listRoot.children[movieIndex]);
   closeMovieModal();
+  updateUI();
 };
 
 const startdeleteMovieHandler = (movieId) => {
